@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    
+    <!-- Configuração da sessão (opcional) -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+    
+    <!-- Mapeamento do Servlet -->
+    <servlet>
+        <servlet-name>MeuServlet</servlet-name>
+        <servlet-class>MeuServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MeuServlet</servlet-name>
+        <url-pattern>/exampleServlet</url-pattern>  <!-- O caminho do servlet -->
+    </servlet-mapping>
+
+</web-app>
